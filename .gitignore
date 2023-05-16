@@ -1,0 +1,11 @@
+__deployer__.zip
+__pycache__/
+.deployed
+.DS_Store
+.env
+.nimbella
+.vscode
+node_modules
+package-lock.json
+venv
+virtualenv
