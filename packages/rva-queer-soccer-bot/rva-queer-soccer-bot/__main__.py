@@ -28,7 +28,9 @@ def main():
         content += "React with :soccer: if you're planning on coming!"
         data = {"content": content, "flags": 4096}
         headers = {"Authorization": "Bot " + environ["TOKEN"]}
-        requests.post(DISCORD_URL, data=data, headers=headers)
+        response = requests.post(DISCORD_URL, data=data, headers=headers)
+        if response.status_code >= 400:
+            response.raise_for_status()
     except Exception as exception:
         error(exception)
         raise exception
