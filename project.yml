@@ -9,6 +9,6 @@ packages:
           - name: rva-queer-soccer-bot
             sourceType: scheduler
             sourceDetails:
-              cron: "0 10 * * 0,3"
+              cron: "0 11 * * 0,3"
         environment:
           TOKEN: "${TOKEN}"
