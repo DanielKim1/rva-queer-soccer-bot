@@ -22,4 +22,5 @@ jobs:
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - run: doctl serverless install
+      - run: doctl serverless connect
       - run: doctl serverless deploy .
